@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+</head>
+<body style="background-color:rgb(125, 132, 133);">
+  <div>
+    <br><br>
+    <hr style="background-color:aqua ;">
+    <hr style="background-color: aqua;">
+    <hr style="background-color:aqua ;">
+    <br>
+
+    
+    <h1 style="background-color: rgb(224, 122, 85);"><center><a href="/">WELCOME TO CASTLE ENA</a></center></h1>
+    <br>
+    <br>
+    <hr style="background-color:aqua ;">
+    <hr style="background-color: aqua;">
+    <hr style="background-color:aqua ;">  
+    </div>
+<div class="container">
+    
+    <center>
+        <h3>UPDATE YOUR RECORD</h3>
+        <form action="/update/{{hostel.sid}}" method="POST">
+            <div class="mb-3">
+              <label for="newid" class="form-label" style="color: rgb(248, 255, 144);">STUDENT ID &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp       :</label>
+              <input type="number" class="form-control" name="newid" id="newid" value="{{hostel.sid}}" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="newname" class="form-label" style="color: rgb(248, 255, 144);">STUDENT NAME&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp         :</label>
+                <input type="text" class="form-control" name="newname" id="newname" value="{{hostel.sname}}" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="newroom" class="form-label" style="color: rgb(248, 255, 144);">STUDENT ROOM&nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp      :</label>
+                <input type="text" class="form-control" name="newroom" id="newroom" value="{{hostel.sroom}}" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="newbranch" class="form-label" style="color: rgb(248, 255, 144);">STUDENT BRANCH &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    :</label>
+                <input type="text" class="form-control" name="newbranch" id="newbranch" value="{{hostel.sbranch}}" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="newstatus" class="form-label" style="color: rgb(248, 255, 144);">STUDENT IN_OUT STATUS:</label>
+                <select type="text" class="form-control" name="newstatus" id="newstatus" aria-describedby="emailHelp">
+                  <option selected value="None">Open this select menu</option>
+                  <option value="OUT">OUT</option>
+                  <option value="IN">IN</option>
+                  </select>
+            </div>
+
+            <br>
+
+
+           
+            <button type="submit" class="btn btn-primary">Update</button>
+          </form></center>
+   
+</div>
+<br>
+<hr style="background-color: aquamarine;">
+<br>
+
+
+
+
+
+    
+</body>
+</html>
